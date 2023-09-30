@@ -13,14 +13,12 @@ segmentation, and depth estimation, respectively, while reducing computations to
 
 ## Contents
 0. [Requirements](#requirements)
-1. [Installation](#installation)
-2. [Datasets](#datasets)
-3. [Architectures](#architectures)
-4. [Training](#training)
-5. [Evaluation](#evaluation)
-6. [Citation](#citation)
-7. [Acknowledgement](#acknowledgement)
-
+0. [Installation](#installation)
+0. [Datasets](#datasets)
+0. [Datasets](#datasets)
+0. [Training](#training)
+0. [Evaluation](#evaluation)
+0. [Citation](#citation)
 
 ## Requirements
 - Python 3.8+ ??
@@ -86,7 +84,3 @@ python3 test_net.py
 
 ```
 If you have any questions, please feel free to contact Hayoung YUN(hayoung.yun@samsung.com) and Hanjoo CHO(hanjoo.cho@samsung.com)
-
-## Acknowledgement
-Our code is developed on 
-Thanks for the great impelementations!
