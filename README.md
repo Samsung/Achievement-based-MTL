@@ -60,16 +60,16 @@ $datasets/NYU/
 
 Method | Paper
 --| --
-RLW (rlw) | --
-DWA	(dwa) |
-GLS	(geometric) |
-MGDA (mgda) |
-PCGrad (pcgrad) |
-CAGrad (cagrad) |
-GradNorm (grad-norm) |
-IMTL (imtl / imtl-g) |
-DTP	(dtp) |
-Proposed (amtl) |
+RLW (rlw) | [Reasonable Effectiveness of Random Weighting: A Litmus Test for Multi-Task Learning](https://arxiv.org/abs/2111.10603)
+DWA	(dwa) | [End-to-End Multi-Task Learning with Attention](https://arxiv.org/abs/1803.10704)
+GLS	(geometric) | [MultiNet++: Multi-Stream Feature Aggregation and Geometric Loss Strategy for Multi-Task Learning](https://arxiv.org/abs/1904.08492)
+MGDA (mgda) | [Multi-Task Learning as Multi-Objective Optimization](https://arxiv.org/abs/1810.04650)
+PCGrad (pcgrad) | [Gradient Surgery for Multi-Task Learning](https://arxiv.org/abs/2001.06782)
+CAGrad (cagrad) | [Conflict-Averse Gradient Descent for Multi-task Learning](https://arxiv.org/abs/2110.14048)
+GradNorm (grad-norm) | [GradNorm: Gradient Normalization for Adaptive Loss Balancing in Deep Multitask Networks](https://arxiv.org/abs/1711.02257)
+IMTL (imtl / imtl-g) | [Towards Impartial Multi-task Learning](https://openreview.net/forum?id=IMPnRXEWpvr)
+DTP	(dtp) | [Dynamic Task Prioritization for Multitask Learning](https://openaccess.thecvf.com/content_ECCV_2018/html/Michelle_Guo_Focus_on_the_ECCV_2018_paper.html)
+Proposed (amtl) | [Achievement-Based Training Progress Balancing for Multi-Task Learning](https://openaccess.thecvf.com/content/ICCV2023/html/Yun_Achievement-Based_Training_Progress_Balancing_for_Multi-Task_Learning_ICCV_2023_paper.html)
 
 
 ### Scripts
