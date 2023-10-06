@@ -2,15 +2,17 @@
 
 This is the official implementation of ICCV'23 paper **Achievement-based Training Progress Balancing for Multi-Task Learning** by Hayoung Yun and Hanjoo Cho [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/papers/Yun_Achievement-Based_Training_Progress_Balancing_for_Multi-Task_Learning_ICCV_2023_paper.pdf)[[Video]](https://github.com/Samsung/Achievement-based-MTL/assets/24874629/a0f8d899-0185-426d-be18-5affe3fc8391)[[Poster]](https://github.com/Samsung/Achievement-based-MTL/files/12775627/hanjoo_cho_achievement-based_training_progress_balancing_for_multi-task_learning_iccv_2023.pdf)
 
-In this paper, we address two major challenges of multi-task learning (1) the high cost of annotating labels for all tasks (2) Balancing training progress of various tasks with different nature.
+In this paper, we address two major challenges of multi-task learning (1) the high cost of annotating labels for all tasks and (2) balancing training progress of diverse tasks with distinct characteristics. 
 
 ![image](https://github.com/Samsung/Achievement-based-MTL/assets/24874629/2beb52b8-c727-46f0-b3a5-f396648ba700)
 
-We address the high annotation cost by integrating task-specific datasets to construct a large-scale partially-annotated datset. The number of labels for individual tasks in the dataset can be different because the images in the merged dataset are labeled only for the tasks from which they originated. The imbalance in the number of task labels exacerbates the imbalance in training progress. To handle the intensified imbalance in training progress, we propose a novel multi-task loss, an achivement-based multi-task loss.
+We address the high annotation cost by integrating task-specific datasets to construct a large-scale multi-task datset. The composed dataset is thereby partially-annotated because each image of the dataset is labeled only for the task from which it originated. Hence, the numbers of labels for individual tasks could be different. The difference in the number of task labels exacerbates the imbalance in training progress among tasks. To handle the intensified imbalance, we propose a novel multi-task loss named achievement-based multi-task loss.  
 
 ![image](https://github.com/Samsung/Achievement-based-MTL/assets/24874629/650ad209-4660-40fc-8076-cdc9d4d73b46)
 
-The previous accuracy-based multi-task loss, DTP, focused on the current accuracy of each task. Instead, we pay attention to how the accuracy can be improved further. For that, considering the accuracy of the single-task model as the _potential_ of the accuracy, we define an ”_achievement_” as the ratio of current accuracy to its single-task accuracy. Then, we formulate the multi-task loss as a weighted geometric mean of individual task losses instead of a weighted sum to prevent any task from dominating the loss.
+The previous accuracy-based multi-task loss, DTP, focused on the current accuracy of each task. Instead, we pay attention to how the accuracy can be improved further. For that, considering the accuracy of the single-task model as the accuracy _potential_ of the task, we define an ”_achievement_” as the ratio of current accuracy to its potential.
+
+Then, we formulate a multi-task loss as weighted geometric mean, instead of a weighted sum generally used for multi-task losses. A weighted sum can be easily dominated by the largest one, if their scales are significantly different. Hence, we employ the weighted geometric mean to multi-task loss to capture the variance in all losses. 
 
 ![image](https://github.com/Samsung/Achievement-based-MTL/assets/24874629/71ec91e2-dba6-4f81-913b-51133e9b0bea)
 
