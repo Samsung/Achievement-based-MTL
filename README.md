@@ -10,7 +10,7 @@ We address the high annotation cost by integrating task-specific datasets to con
 
 ![image](https://github.com/Samsung/Achievement-based-MTL/assets/24874629/650ad209-4660-40fc-8076-cdc9d4d73b46)
 
-The previous accuracy-based multi-task loss, DTP, focused on the current accuracy of each task. Instead, we pay attention to how the accuracy can be improved further. For that, considering the accuracy of the single-task model as the accuracy _potential_ of the task, we define an ”_achievement_” as the ratio of current accuracy to its potential.
+The previous accuracy-based multi-task loss, DTP, focused on the current accuracy of each task. Instead, we pay attention to how the accuracy can be improved further. For that, considering the accuracy of the single-task model as the accuracy _potential_ of the task, we define an ”_achievement_” as the ratio of current accuracy to its potential. Our achievement-based task weights encourage tasks with low achievements and slow down tasks converged early. 
 
 Then, we formulate a multi-task loss as weighted geometric mean, instead of a weighted sum generally used for multi-task losses. A weighted sum can be easily dominated by the largest one, if their scales are significantly different. Hence, we employ the weighted geometric mean to multi-task loss to capture the variance in all losses. 
 
