@@ -18,6 +18,8 @@ Then, we formulate a multi-task loss as weighted geometric mean, instead of a we
 
 The proposed loss achieved the best multi-task accuracy without incurring training time overhead. Compared to single-task models, the proposed one achieved 1.28%, 1.65%, and 1.18% accuracy improvement in object detection, semantic segmentation, and depth estimation, respectively, while reducing computations to 33.73%.
 
+🚀 _This repo is scheduled for release on November 1, 2023._
+
 ## Contents
 1. [Installation](#installation)
 1. [Datasets](#datasets)
