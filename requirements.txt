@@ -1,0 +1,11 @@
+thop
+torch
+torchvision
+numpy
+pycocotools
+opencv-python
+matplotlib
+Cython
+pandas
+h5py
+scipy
